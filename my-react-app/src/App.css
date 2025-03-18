@@ -21,24 +21,27 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 300px; /* Fixed width */
+  min-height: 400px; /* Fixed height to ensure both forms are the same size */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .form-toggle {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  
 }
 
 .form-toggle button {
-  width: 60%;
+  width: 48%; /* Slightly less than 50% to account for spacing */
   padding: 10px;
   background-color: #f3f3f3;
   border: none;
   cursor: pointer;
   font-size: 16px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 5px;
 }
 
 .form-toggle .active {
@@ -64,7 +67,7 @@ body {
 
 .form button {
   padding: 10px;
-  background-color:#033452;
+  background-color: #033452;
   color: white;
   border: none;
   border-radius: 5px;
@@ -85,13 +88,13 @@ body {
 .show-password-label {
   display: flex;
   align-items: center;
-  margin-top: 10px; /* Space between the input and the checkbox */
+  margin-top: 10px;
   font-size: 14px;
   color: #333;
   cursor: pointer;
 }
 
 .show-password-label input {
-  margin-right: 8px; /* Space between the checkbox and the label text */
+  margin-right: 8px;
   cursor: pointer;
 }
