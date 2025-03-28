@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import LoginSignup from './LoginSignup'
-// import Signup from './Signup';
-// import Login from './Login';
+import Signup from './Signup';
+import Login from './Login';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +17,7 @@ function App() {
     <LoginSignup/>
     </div>
 
-    {/* <div>
+    <div>
             <h1>User Authentication</h1>
             {!isLoggedIn ? (
                 <>
@@ -27,7 +27,7 @@ function App() {
             ) : (
                 <p>Welcome! You are logged in.</p>
             )}
-        </div> */}
+        </div>
 
     </>
   )
